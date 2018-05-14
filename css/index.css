@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+:root {
+    font-family: 'Gamja Flower', cursive;
+    font-size: 26px;
+}
+html{
+  background-color: #f5f4ff;  
+}
+body {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.menu{
+    background-color: #3c8b92;
+    width: 100%;
+}
+.menu a{
+     text-decoration:none;
+    height: 10px;
+    width: auto;
+    color: white;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.menu a:hover {
+    color: #3c8b92;
+    background-color:white;
+}
+header {
+    background-image: url(../img/laptop.jpg);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    height: 600px;
+}
+#Ruslan {
+     font-size: 3em;
+     color: white;
+     margin-right: 900px;
+}
+#Overko {
+    font-size: 3em;
+    color: white;
+    margin-right: 900px;
+}
+header .btn {
+    text-decoration:none;
+    color: white;
+}
+header nav{
+    display: inline-block;
+    margin-bottom: 250px;
+}
+#about_me {
+    display: grid;
+    grid-template-columns:50% 50%;
+   
+}
+
+#about_me p {
+    font-size: 26px;
+}
+
+h1,h2,h3{
+    font-family: 'Anton', sans-serif;
+      text-align:center;
+}
+#education{
+background-color: #3c8b92;
+color: white;
+}
+#portfolio {
+    background-color: #3c8b92;
+    color:white;
+}
+#portfolio img{
+    margin: 17px 17px 17px 17px;
+}
+#feedback{
+     background-color: #3c8b92;
+      font-size: 35px;
+      color: white;
+}
+#contact{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#contact p{
+    display: inline;
+}
+#feedback .like-site{
+    text-align: center;
+}
+.comment{
+    margin-right: 40px;
+}
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
