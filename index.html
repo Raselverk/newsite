@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +8,19 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Ruslan Overko</title>
 </head>
-
 <body>
     <header>
-         <nav class="menu">
-            <a  href="#about_me">About me</a>
-            <a  href="#education">Education</a>
-            <a  href="#experience">Experience</a>
-            <a  href="#portfolio">Portfolio</a>
-            <a  href="#favorite_phrases">Favorite phrases</a>
-            <a  href="#contact">Contact</a>
-        </nav>
+        <nav class="menu">
+            <a href="#about_me">About me</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#favorite_phrases">Favorite phrases</a>
+            <a href="#contact">Contact</a>
+         </nav>
+         <div>
+         <a class="burg" href="#">☰</a>
+         </div>
         <div class="contacts">
             <h1 id="Ruslan">Ruslan</h1>
             <h1 id="Overko">Overko</h1>
@@ -33,7 +34,6 @@
     </header>
     <main>
         <article id="about_me">
-            <img src="img/ruslan_overko.jpg" alt="ruslan_overko">
             <div>
                 <h2>Information</h2>
                 <p>NAME: Ruslan Overko
@@ -45,6 +45,9 @@
                     <br>I worked as a model. Also I worked in Cyprus as a barmen.
                     <br>I can speek at ukrainian, russian, engish and turkish languages. But now I decided to become a software developer.
                 </p>
+            </div>
+            <div>
+                <img src="img/ruslan_overko.jpg" alt="ruslan_overko">
             </div>
         </article>
         <article id="education">
@@ -62,10 +65,9 @@
             <ul>
                 <li>Hotel «Merit Crystal Cove» , North Cyprus 2015-2017 Waiter, Barmen</li>
                 <li>Model agency «Creeper» 2013-2014 Model</li>
-                    <li>Mobile Salon «Life» 2012 Executive director</li>
+                <li>Mobile Salon «Life» 2012 Executive director</li>
             </ul>
         </article>
-
         <article id="portfolio">
             <h2>Portfolio</h2>
             <h3>Here you will see my projects</h3>
@@ -75,7 +77,7 @@
             <img src="img/project4.jpg" alt="4-project" />
         </article>
         <div>
-            <h2 class="carousel1">Favorite phrases</h2>
+            <h2 id="favorite_phrases" class="carousel1">Favorite phrases</h2>
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -109,32 +111,24 @@
   </a>
             </div>
         </div>
-        <article id="feedback">
-            <h2>You can write me here</h2>
-            <label class="like-site"><b>Did you like my website?</b><Br>
-                    <input type="radio" name="you like my website" value="yes">Yes
-                     </label>
-            <label>
-                    <input type="radio" name="you like my website" value="no">No
-                     </label>
-            <label>
-                    <input type="radio" name="you like my website" value="maybe">Maybe
-                    </label>
-            <br>
+      <div id=feedback>
+         <h2>You can write me here</h2>
             <form method="post" action="https://formspree.io/Overko@windowslive.com">
-                <label for="client-name"><br></label>
-                <input id="client-name" type="text" placeholder="Name" name="client-name" required>
-                <br>
-                <label for="client-email"><br></label>
-                <input id="client-email" type="email" name="client-email" placeholder="Email" required>
-                <br>
-                <label>
-                <textarea name="comment" placeholder="Your message" class="comment"></textarea>
-                </label>
-                <br>
-                <input type="submit">
+                <div>
+                    <label for="client-name"></label>
+                    <input class="client-name" type="text" name="client-name" placeholder="Name" required>
+                    <label for="client-email"><br></label>
+                    <input id="client-email" type="email" name="client-email" placeholder="Email" required>
+                </div>
+                <div>
+                    <textarea name="Message" placeholder="Your message"></textarea>
+                </div>
             </form>
-        </article>
+            <div class="st_btn">
+                <button class="submit_btn" type="submit">Send</button>
+            </div>
+        </div>
+    </div>
     </main>
     <footer id="contact">
         <h2>Contact</h2>
@@ -147,6 +141,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-</body>
 
+    <script  src="js/scroll.js"></script>
+    <script  src="burger.js"></script>
+</body>
 </html>

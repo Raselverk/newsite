@@ -4,34 +4,12 @@
     font-family: 'Gamja Flower', cursive;
     font-size: 26px;
 }
-html{
-  background-color: #f5f4ff;  
+html {
+    background-color: #f5f4ff;
 }
 body {
     max-width: 980px;
     margin: 0 auto;
-}
-#navbarNav{
-    background-color: #3c8b92;
-      width: 100%;
-      margin: 0;
-}
-.menu{
-    background-color: #3c8b92;
-    width: 100%;
-    display: inline-block;
-}
-.menu a{
-     text-decoration:none;
-    height: 10px;
-    width: auto;
-    color: white;
-    padding-left: 13px;
-    padding-right: 13px;
-}
-.menu a:hover {
-    color: #3c8b92;
-    background-color:white;
 }
 header {
     background-image: url(../img/laptop.jpg);
@@ -40,10 +18,27 @@ header {
     display: block;
     height: 600px;
 }
+.menu {
+    width: 100%;
+    display: inline-block;
+    font-family: 'Anton', sans-serif;
+}
+.menu a {
+    text-decoration: none;
+    height: 10px;
+    width: auto;
+    color: white;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.menu a:hover {
+    color: black;
+    background-color: white;
+}
 #Ruslan {
-     font-size: 3em;
-     color: white;
-     margin-right: 900px;
+    font-size: 3em;
+    color: white;
+    margin-right: 900px;
 }
 #Overko {
     font-size: 3em;
@@ -51,55 +46,45 @@ header {
     margin-right: 900px;
 }
 header .btn {
-    text-decoration:none;
+    text-decoration: none;
     color: white;
 }
-header nav{
+header nav {
     display: inline-block;
     margin-bottom: 250px;
 }
+header .burg{
+    display: none;
+}
+h1,
+h2,
+h3 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
 #about_me {
     display: grid;
-    grid-template-columns:50% 50%;
-   
+    grid-template-columns: 50% 50%;
 }
-
+#about_me div {
+    width: 100%;
+}
+#about_me img {
+    width: 100%;
+}
 #about_me p {
     font-size: 26px;
 }
-
-h1,h2,h3{
-    font-family: 'Anton', sans-serif;
-      text-align:center;
-}
-#education{
-background-color: #3c8b92;
-color: white;
+#education {
+    background-color: #3c8b92;
+    color: white;
 }
 #portfolio {
     background-color: #3c8b92;
-    color:white;
+    color: white;
 }
-#portfolio img{
+#portfolio img {
     margin: 17px 17px 17px 17px;
-}
-#feedback{
-     background-color: #3c8b92;
-      font-size: 35px;
-      color: white;
-}
-#contact{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-#contact p{
-    display: inline;
-}
-#feedback .like-site{
-    text-align: center;
-}
-.comment{
-    margin-right: 40px;
 }
 .carousel-content {
     display: flex;
@@ -107,3 +92,110 @@ color: white;
     justify-content: center;
     height: 200px;
 }
+#feedback {
+    background-color: #3c8b92;
+    font-size: 35px;
+    color: white;
+}
+#contact {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#contact p {
+    display: inline;
+}
+#feedback .like-site {
+    text-align: center;
+}
+.comment {
+    margin-left: 25px;
+}
+.form-row{
+   background-color: #3c8b92; 
+   display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+}
+.write_me{
+     background-color: #3c8b92;
+     color: white;
+     margin-bottom: 0;
+}
+#feedback h2{
+    padding-top: 13px;
+}
+form div input {
+    flex: 1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid white;
+}
+form div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+textarea {
+    height: 200px;
+    width: 100%;
+    resize: none;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 6px;
+    
+}
+.submit_btn {
+    margin: 20px auto;
+    display: block;
+    padding: 10px 16px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    color: #3c8b92;
+}
+.st_btn{
+    padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  
+    header nav {
+        display: none;
+    }
+  
+    
+    
+}
+
+@media only screen and (max-width: 950px) {
+    #about_me {
+        display: block;
+    }
+   
+}
+@media only screen and (max-width: 900px){
+ .menu{
+        display: none;
+    }
+    header .burg{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    }
+    header .burg div{
+        display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    }
+    
+
+}
+
