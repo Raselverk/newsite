@@ -22,6 +22,7 @@ header {
     width: 100%;
     display: inline-block;
     font-family: 'Anton', sans-serif;
+
 }
 .menu a {
     text-decoration: none;
@@ -30,6 +31,7 @@ header {
     color: white;
     padding-left: 13px;
     padding-right: 13px;
+
 }
 .menu a:hover {
     color: black;
@@ -53,7 +55,7 @@ header nav {
     display: inline-block;
     margin-bottom: 250px;
 }
-header .burg{
+header .burg {
     display: none;
 }
 h1,
@@ -110,19 +112,19 @@ h3 {
 .comment {
     margin-left: 25px;
 }
-.form-row{
-   background-color: #3c8b92; 
-   display: flex;
+.form-row {
+    background-color: #3c8b92;
+    display: flex;
     flex-wrap: wrap;
     margin-right: 0;
     margin-left: 0;
 }
-.write_me{
-     background-color: #3c8b92;
-     color: white;
-     margin-bottom: 0;
+.write_me {
+    background-color: #3c8b92;
+    color: white;
+    margin-bottom: 0;
 }
-#feedback h2{
+#feedback h2 {
     padding-top: 13px;
 }
 form div input {
@@ -137,7 +139,7 @@ form div {
     flex-wrap: wrap;
     width: 70%;
     margin: 0 auto;
-    
+
 }
 textarea {
     height: 200px;
@@ -146,7 +148,7 @@ textarea {
     margin: 0 auto;
     border: 1px solid white;
     border-radius: 6px;
-    
+
 }
 .submit_btn {
     margin: 20px auto;
@@ -158,44 +160,35 @@ textarea {
     cursor: pointer;
     color: #3c8b92;
 }
-.st_btn{
+.st_btn {
     padding-bottom: 10px;
 }
 
 
-@media only screen and (max-width: 700px) {
-  
-    header nav {
-        display: none;
-    }
-  
-    
-    
-}
 
 @media only screen and (max-width: 950px) {
     #about_me {
         display: block;
     }
-   
 }
-@media only screen and (max-width: 900px){
- .menu{
+
+@media only screen and (max-width: 900px) {
+
+    .menu {
         display: none;
     }
-    header .burg{
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size: 2em;
-    padding: 10px;
+    header nav {
+        display: none;
     }
-    header .burg div{
-        display: flex;
-    align-self: center;
-    justify-content: flex-end;
+    header .burg {
+        display: inline-block;
+        float: right;
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
-    
-
 }
-
