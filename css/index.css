@@ -163,7 +163,11 @@ text-shadow: 1px 1px 2px black;
   justify-content: space-between;
   align-items:center;
 }
-.projects div h4{
+.projects div a{
+    color: white;
+    text-decoration: none;
+}
+.projects div a h4{
     padding-left: 5px;
     padding-right: 5px;
     font-size: 30px;
@@ -174,7 +178,7 @@ text-shadow: 1px 1px 2px black;
     width: 170px;
     height: 90px;
 }
-.projects div p{
+.projects div a p{
     padding-left: 5px;
     padding-right: 5px;
     font-size: 22px;
