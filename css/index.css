@@ -18,34 +18,39 @@ header {
     display: block;
     height: 600px;
 }
-.menu {
+.menu1 {
     width: 100%;
     display: inline-block;
     font-family: 'Anton', sans-serif;
+    text-shadow: 1px 1px 2px black;
 
 }
-.menu a {
+.menu1 a {
     text-decoration: none;
     height: 10px;
     width: auto;
     color: white;
-    padding-left: 13px;
-    padding-right: 13px;
-
+    padding-left: 8px;
+    padding-right: 8px;
 }
-.menu a:hover {
+.menu1 :hover {
     color: black;
     background-color: white;
+}
+.dropdown{
+    display: none;
 }
 #Ruslan {
     font-size: 3em;
     color: white;
     margin-right: 900px;
+    text-shadow: 5px -1px 12px black;
 }
 #Overko {
     font-size: 3em;
     color: white;
     margin-right: 900px;
+    text-shadow: 5px -1px 12px black;
 }
 header .btn {
     text-decoration: none;
@@ -65,49 +70,135 @@ h3 {
     text-align: center;
 }
 #about_me {
+    background: linear-gradient(#b0e0e6, #3c8b92);
     display: grid;
     grid-template-columns: 50% 50%;
+    color: white;
+    margin-top: 7px;
+    text-shadow: 1px 1px 2px black;
 }
 #about_me div {
     width: 100%;
+    border:2px solid white;
+    
 }
 #about_me img {
     width: 100%;
+    border:2px solid white;
 }
+#about_me span,
 #about_me p {
-    font-size: 26px;
+    display: block;
+    font-size: 27px;
+    padding-left: 10px;
+    padding-right: 5px;
+    
 }
 #education {
-    background-color: #3c8b92;
+    background: linear-gradient(#3c8b92, #b0e0e6);
     color: white;
+    margin-top: 5px;
+    text-shadow: 1px 1px 2px black;
+   
+}
+#experience{
+    background: linear-gradient(#b0e0e6, #3c8b92);
+    margin-top: -20px;
+    margin-bottom: -20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+#somePictures{
+    background: linear-gradient(#3c8b92, #b0e0e6);
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    margin-bottom: 7px;
 }
 #portfolio {
-    background-color: #3c8b92;
+    background: linear-gradient(#b0e0e6, #3c8b92);
+    text-shadow: 1px 1px 2px black;
     color: white;
+    margin-top:15px;
 }
 #portfolio img {
     margin: 17px 17px 17px 17px;
 }
-.carousel-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
+#favorite_phrases{
+    margin-top: 7px;
+    background: linear-gradient(#3c8b92, #b0e0e6);
+    text-shadow: 1px 1px 2px black;
+    color: white;
 }
 #feedback {
-    background-color: #3c8b92;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background: linear-gradient(#b0e0e6, #3c8b92);
     font-size: 35px;
     color: white;
 }
 #contact {
+    background: linear-gradient(#3c8b92, #b0e0e6);
+    text-shadow: 1px 1px 2px black;
+    color: white;
     margin-top: auto;
     margin-bottom: auto;
 }
 #contact p {
     display: inline;
 }
+#feedback{
+text-shadow: 1px 1px 2px black;
+}
 #feedback .like-site {
     text-align: center;
+}
+#feedback form input,
+#feedback form textarea,
+.submit_btn{ 
+    text-shadow: 1px 1px 2px black;
+}
+.projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+.projects div h4{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+.projects div img{
+    text-align: center;
+    width: 170px;
+    height: 90px;
+}
+.projects div p{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.show{
+    padding: 0;
+}
+.s{
+    margin-left: 10px;
+    font-size: 70px;
+    text-decoration: none;
+    text-shadow: 32px -12px 5px black;
+}
+.fa-youtube{
+    color: red;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
 }
 .comment {
     margin-left: 25px;
@@ -133,6 +224,7 @@ form div input {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 form div {
     display: flex;
@@ -148,6 +240,7 @@ textarea {
     margin: 0 auto;
     border: 1px solid white;
     border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 }
 .submit_btn {
@@ -159,36 +252,140 @@ textarea {
     background-color: white;
     cursor: pointer;
     color: #3c8b92;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .st_btn {
     padding-bottom: 10px;
 }
+.carousel-indicators{
+    bottom: -5px;
+}
+#contact div p{
+   padding: 10px;
+   text-align: center;
+}
 
 
 
-@media only screen and (max-width: 950px) {
+
+
+.accordion {
+    max-width: 990px;
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+    flex-direction: row;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+.box {
+    position: relative;
+    height: 100%;
+    flex: 1;
+    background-position: left;
+    background-size: cover;
+    transition: .7s;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+.box:hover{
+    flex: 3.5;
+    height: 450px;
+}
+.a1 {
+    background-image: url(/img/a.jpg);
+}
+.a2 {
+    background-image: url(/img/c.jpg);
+}
+.a3 {
+    background-image: url(/img/e.jpg);
+   
+}
+.a4 {
+    background-image: url(/img/d.jpg);
+  
+}
+.a5 {
+    background-image: url(/img/b.jpg); 
+}
+
+
+@media screen and (max-width: 800px){
+   
+    .accordion {
+        flex-direction: column;
+        height: 700px;
+        box-shadow: none;
+    }
+    .box {
+        box-shadow: none;
+    }
+    .box:hover {
+        flex: 7;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 980px) {
     #about_me {
         display: block;
+    }
+    .menu1 a{
+        font-size: 22px;
     }
 }
 
 @media only screen and (max-width: 900px) {
 
-    .menu {
+    .menu1 {
         display: none;
     }
     header nav {
         display: none;
     }
-    header .burg {
-        display: inline-block;
-        float: right;
-        text-decoration: none;
-        color: white;
-        font-size: 2em;
-        padding: 10px;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+    
+    .dropdown{
+    display:block;
+    float: right;
+    width: auto;
 }
+#dropdownMenu2{
+    background-color: white;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    margin: 15px;
+}
+.dropdown-item{
+    background-color: white;
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+
+.dropdown-menu.show{
+    transform: translate3d(-118px, 76px, 0px);
+}
+form div{
+    display: block;
+
+}
+input{
+    width: 100%;
+}
+}
+

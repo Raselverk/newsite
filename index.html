@@ -1,49 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <title>Ruslan Overko</title>
 </head>
+
 <body>
     <header>
-        <nav class="menu">
+        <nav class="menu1 menu">
             <a href="#about_me">About me</a>
             <a href="#education">Education</a>
             <a href="#experience">Experience</a>
+            <a href="#somePictures">Some Pictures</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#favorite_phrases">Favorite phrases</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div>
-            <a class="burg" href="#">☰</a>
+        
+        <div class="dropdown menu">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                MENU
+            </button> 
+            <div class="dropdown-menu " aria-labelledby="dropdownMenu2">
+                <a class="dropdown-item" type="button" href="#about_me">About me</a>
+                <a class="dropdown-item" type="button" href="#education">Education</a>
+                <a class="dropdown-item" type="button" href="#experience">Experience</a>
+                <a class="dropdown-item" type="button" href="#somePictures">Some Pictures</a>
+                <a class="dropdown-item" type="button" href="#portfolio">Portfolio</a>
+                <a class="dropdown-item" type="button" href="#favorite_phrases">Favorite phrases</a>
+                <a class="dropdown-item" type="button" href="#contact">Contact</a>
+            </div>
         </div>
+        
         <div class="contacts">
             <h1 id="Ruslan">Ruslan</h1>
             <h1 id="Overko">Overko</h1>
             <nav>
-                <img src="img/facebook.png" alt="facebook">
-                <img src="img/gmail.png" alt="gmail">
-                <img src="img/twitter.png" alt="twitter">
-                <a href="#" class="btn">Download Resume</a>
+                <a href="https://www.facebook.com/ruslanoverko">
+                    <i class="s fab fa-facebook"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCwl1fWLj3tWKX51Ry2PSnJQ?view_as=subscriber">
+                    <i class="s fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ruslan-overko-649633163/">
+                    <i class="s fab fa-linkedin"></i>
+                </a>
             </nav>
         </div>
+        
     </header>
+    
     <main>
         <article id="about_me">
             <div>
                 <h2>Information</h2>
-                <p>NAME: Ruslan Overko
-                    <br> BIRTHDAY: Oct 09,1992
-                    <br> EMAIL: Overko@windowslive.com
-                    <br> MOBILE: 123-456-7890
-                    <br> ADDRESS: 12/F, 999 Jordan Road, Lviv
-                    <br><br> Hi, My name is Ruslan Overko. I studed at university and 2 acadamıes.
-                    <br>I worked as a model. Also I worked in Cyprus as a barmen.
-                    <br>I can speek at ukrainian, russian, engish and turkish languages. But now I decided to become a software developer.
+                <span>NAME: Ruslan Overko</span>
+                <span>BIRTHDAY: Oct 09,1992</span>
+                <span>EMAIL: Overko@windowslive.com</span>
+                <span>MOBILE: 123-456-7890</span>
+                <span>ADDRESS: 12/F, 999 Jordan Road, Lviv</span>
+                <p>Hi, My name is Ruslan Overko. I studed at university and 2 acadamıes.
+                    I worked as a model. Also I worked in Cyprus as a barmen.
+                    I can speek at ukrainian, russian, engish and turkish languages. But now I decided to become a software developer.
                 </p>
             </div>
             <div>
@@ -68,16 +92,52 @@
                 <li>Mobile Salon «Life» 2012 Executive director</li>
             </ul>
         </article>
+        <article id="somePictures">
+            <h2>Some Pictures</h2>
+            <div class="accordion">
+                <div class="box a1">
+                    <div class="image_1"></div>
+                </div>
+        
+                <div class="box a2">
+                    <div class="image_2"></div>
+                </div>
+        
+                <div class="box a3">
+                    <div class="image_3"></div>
+                </div>
+
+                <div class="box a4">
+                    <div class="image_4"></div>
+                </div>
+                <div class="box a5">
+                    <div class="image_5"></div>
+                </div>
+            </div>
+        </article>
         <article id="portfolio">
             <h2>Portfolio</h2>
-            <h3>Here you will see my projects</h3>
-            <img src="img/project1.jpg" alt="1-project" />
-            <img src="img/project2.jpg" alt="2-project" />
-            <img src="img/project3.jpg" alt="3-project" />
-            <img src="img/project4.jpg" alt="4-project" />
+            <h3>Here you can see my projects</h3>
+            <div class="projects">
+                <div class="editor">
+                    <h4>Text editor</h4>
+                    <img src="img/texteditor.jpg" alt="text editor" />
+                    <p>Used: HTML, CSS, JS</p>
+                </div>
+                <div class="editorReact">
+                    <h4>Text editor React</h4>
+                    <img src="img/project2.jpg" alt="text editor react" />
+                    <p>Used: HTML, CSS, JS, REACK.JS</p>
+                </div>
+                <div class="angular">
+                    <h4>Text editor</h4>
+                    <img src="img/project2.jpg" alt="2-project" />
+                    <p>Used: HTML, CSS, JS</p>
+                </div>
+            </div>
         </article>
-        <div>
-            <h2 id="favorite_phrases" class="carousel1">Favorite phrases</h2>
+        <div id="favorite_phrases">
+            <h2 class="carousel1">Favorite phrases</h2>
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -102,25 +162,25 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+                            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
         </div>
-        <div id=feedback>
+        <div id="feedback">
             <h2>You can write me here</h2>
-            <form method="post" action="https://formspree.io/Overko@windowslive.com">
+            <form method="post" action="https://tranquil-sierra-86540.herokuapp.com/Overko@windowslive.com">
                 <div>
                     <label for="client-name"></label>
                     <input id="client-name" type="text" name="client-name" placeholder="Name" required>
                     <label for="client-email"></label>
                     <input id="client-email" type="email" name="client-email" placeholder="Email" required>
-                </div>
-                <div>
+               </div>
+               <div>
                     <textarea name="Message" placeholder="Your message"></textarea>
                 </div>
             </form>
@@ -129,6 +189,7 @@
             </div>
         </div>
     </main>
+    
     <footer id="contact">
         <h2>Contact</h2>
         <div>
@@ -137,10 +198,12 @@
             <p>MOBILE:123-456-7890</p>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
     <script src="js/scroll.js"></script>
 </body>
+
 </html>
