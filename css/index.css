@@ -12,11 +12,14 @@ body {
     margin: 0 auto;
 }
 header {
-    background-image: url(../img/laptop.jpg);
+    background-image: url(../img/mainBackground.jpg);
     background-size: cover;
     background-position: center;
     display: block;
     height: 600px;
+}
+header .contacts{
+        margin-left: 700px;
 }
 .menu1 {
     width: 100%;
@@ -297,21 +300,21 @@ textarea {
     height: 450px;
 }
 .a1 {
-    background-image: url(/img/code1.jpg);
+    background-image: url("https://i-h1.pinimg.com/564x/a9/98/8e/a9988ef396cd46f86b9d5a7d504dc9bf.jpg");
 }
 .a2 {
     background-image: url("https://scontent.cdninstagram.com/vp/6388a9820beabf26100c08f5845407ca/5D327617/t51.2885-15/sh0.08/e35/s640x640/52843954_124275078703937_5993995130469617047_n.jpg?_nc_ht=scontent.cdninstagram.com");
 }
 .a3 {
-    background-image: url(/img/code2.jpg);
+    background-image: url("https://i-h1.pinimg.com/564x/2b/b6/e9/2bb6e923c0a857e2ef8fa30dfc48c014.jpg");
    
 }
 .a4 {
-    background-image: url("https://secure.meetupstatic.com/photos/member/9/7/4/4/member_246518724.jpeg");
+    background-image: url("https://i-h1.pinimg.com/564x/ac/50/40/ac50401e9ee2459d1bc9ef030c1ee8e3.jpg");
   
 }
 .a5 {
-    background-image: url(/img/code3.jpg); 
+    background-image: url("https://i-h1.pinimg.com/564x/a1/fd/39/a1fd39647fd2dddb8d506e654d1ff2bb.jpg?b=t"); 
 }
 
 
@@ -336,22 +339,16 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 988px) {
     #about_me {
         display: block;
     }
     .menu1 a{
         font-size: 22px;
+    }
+    header .contacts{
+      margin-left: 5px;
+      margin-top: -245px;
     }
 }
 
@@ -359,11 +356,8 @@ textarea {
 
     .menu1 {
         display: none;
-    }
-    header nav {
-        display: none;
-    }
     
+    }
     .dropdown{
     display:block;
     float: right;
@@ -390,6 +384,9 @@ form div{
 }
 input{
     width: 100%;
+}
+header .contacts {
+     margin-top: 0; 
 }
 }
 
