@@ -224,6 +224,9 @@ header .burg {
       -ms-flex-align:center;
           align-items:center;
 }
+.projects div{
+    text-align: center;
+}
 .projects div a{
     color: white;
     text-decoration: none;
@@ -407,10 +410,12 @@ textarea {
     }
     form div{
         display: block;
-    
     }
     input{
         width: 100%;
+    }
+    .mail{
+      margin-top: -50px;
     }
     header .contacts {
          margin-top: 0; 
@@ -437,5 +442,26 @@ textarea {
         -webkit-box-flex: 7;
             -ms-flex: 7;
                 flex: 7;
+    }
+}
+
+@media screen and (max-width: 650px){
+ .carousel-content h1{
+      font-size: 28px;
+  }  
+  .projects div a h4{
+     font-size: 22px;
+  }
+  .projects div a img{
+     width: 70px;
+     height: 70px;
+  }
+  .projects div a p{
+     font-size: 15px;
+  }
+  .box:hover {
+        -webkit-box-flex: 9;
+            -ms-flex: 9;
+                flex: 9;
     }
 }
