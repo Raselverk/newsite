@@ -366,7 +366,7 @@ textarea {
     #about_me {
         display: block;
     }
-    .menu1 a{
+    .mainMenu a{
         font-size: 22px;
     }
     header .contacts{
@@ -380,7 +380,7 @@ textarea {
 
 @media only screen and (max-width: 900px) {
 
-    .menu1 {
+    .mainMenu {
         display: none;
     
     }
