@@ -9,8 +9,7 @@ html {
 }
 body {
     max-width: 980px;
-    margin: 0 auto;
-}
+    margin: 0 auto;}
 h1,
 h2,
 h3 {
@@ -41,7 +40,7 @@ h3 {
 /*Header*/
 
 header {
-    background-image: url(../img/mainBackground1.jpg);
+    background-image: url(../img/mainBackground.jpg);
     background-size: cover;
     background-position: center;
     display: block;
