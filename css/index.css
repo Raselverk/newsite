@@ -130,12 +130,20 @@ header .burg {
 
 #education {
     margin-top: 5px;
+    
 }
+.fa-graduation-cap span{
+    margin-left: 10px;
+}
+
 /*Experience*/
 
 #experience{
     margin-top: -20px;
     margin-bottom: -20px;
+}
+.fa-briefcase span{
+     margin-left: 10px;
 }
 
 /*Some Pictures*/
@@ -360,6 +368,7 @@ textarea {
    text-align: center;
    display: inline;
 }
+
 
 
 
